@@ -53,6 +53,11 @@ public class SnakeNLaddergame {
 	 {
 		 player = player - dicevalue;
 	 }
+//Winning Position 100
+	 public int isWin(int player)
+	 {
+		 return winpoint == player;
+	 }
 	
 		
 		
