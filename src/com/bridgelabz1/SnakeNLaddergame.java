@@ -1,6 +1,8 @@
 package com.bridgelabz1;
 import java.util.Random;
-class SnakeNLadder{
+class SnakeNLadder
+{
+	final static winpoint = 100;
 
 //SnakeNLadder game with single player at start position 0
 
@@ -42,14 +44,20 @@ public class SnakeNLaddergame {
 			 System.out.println("Moves ahead");
 			 player = Ladder.get(player);
 		 }
-				 
+		 return player;
 	 }
+				 
 	 
-	 
+ //Value for Player reaching winning position
+	 if(player>winpoint)
+	 {
+		 player = player - dicevalue;
+	 }
 	
 		
 		
 }		 		
 
+}
 }
 
